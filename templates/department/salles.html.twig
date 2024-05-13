@@ -1,0 +1,9 @@
+{# salles_by_department_name.html.twig #}
+
+<h1>Salles pour le département "{{ name }}"</h1>
+
+<ul>
+    {% for salle in salles %}
+        <li>{{ salle.getNomdepart() }} - {{ salle.getNumero() }}</li>
+    {% endfor %}
+</ul>
